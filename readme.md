@@ -1,5 +1,6 @@
 #jQuery Super Sticky Plugin#
 *version 1.0, April 23, 2013*
+
 *by Jason Rosenbaum, Corporate Action Network, https://github.com/j-ro/*
 
 A smooth sticky plugin that keeps an element stuck onscreen no matter how far the user scrolls. Handles edge cases well (like elements that are longer than browser windows, or elements or wrappers that change height after load).
@@ -21,10 +22,18 @@ A smooth sticky plugin that keeps an element stuck onscreen no matter how far th
 **init** -- called on load and when either the element or its wrapper change height
 
 
-###Example:###
+###Examples:###
+
+```javascript		
+$(document).ready(function() {
+	//use defaults
+	$('.sticky_element').superSticky();
+});
+```
  
 ```javascript		
 $(document).ready(function() {
+	//use custom options
 	$('.sticky_element').superSticky({
 		padding_top : 120,
 		padding_bottom : 50,
@@ -33,11 +42,11 @@ $(document).ready(function() {
 });
 ```
  
-##License##	
+##License	
 
 Includes the jQuery Mutate plugin: https://github.com/jqui-dot-net/jQuery-mutate	
  		
-Oher code copyright (c) 2013 Jason Rosenbaum
+Other code copyright (c) 2013 Jason Rosenbaum
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
