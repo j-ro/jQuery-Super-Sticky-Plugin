@@ -8,6 +8,17 @@ A smooth sticky plugin that keeps an element stuck onscreen no matter how far th
 
 ##Usage##
 
+###Setup:###
+
+Include the jquery.superSticky.js (or jquery.superSticky.min.js) in your HTML file after your jQuery include:
+
+```html
+<script src="jquery.superSticky.js" type="text/javascript"></script>
+```
+
+The plugin should work on sidebars in a wide range of DOM setups -- let me know if you have issues with your implementation in the issues section!
+
+
 ###Options:###
  		
 **wrapper** -- a jQuery selector identifying the element that wraps around the sticky sidebar *(default: the sticky element's parent)*
