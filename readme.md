@@ -54,6 +54,10 @@ $(document).ready(function() {
 	});
 });
 ```
+
+###Demo:###
+
+See a demonstration of the plugin in action here: http://j-ro.github.io/jQuery-Super-Sticky-Plugin/demo.html
  
 ##License	
 
