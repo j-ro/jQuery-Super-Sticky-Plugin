@@ -16,7 +16,7 @@ Include the jquery.superSticky.js (or jquery.superSticky.min.js) file in your HT
 <script src="jquery.superSticky.js" type="text/javascript"></script>
 ```
 
-Then call the plugin using something like the examples below.
+Then call the plugin on a DOM element you want to make sticky using something like the examples below.
 
 The plugin should work on sidebars in a wide range of DOM setups -- let me know if you have issues with your implementation in the issues section!
 
