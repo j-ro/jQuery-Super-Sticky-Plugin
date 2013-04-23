@@ -10,7 +10,7 @@ A smooth sticky plugin that keeps an element stuck onscreen no matter how far th
 
 ###Setup:###
 
-Include the jquery.superSticky.js (or jquery.superSticky.min.js) in your HTML file after your jQuery include:
+Include the jquery.superSticky.js (or jquery.superSticky.min.js) file in your HTML file after your jQuery include:
 
 ```html
 <script src="jquery.superSticky.js" type="text/javascript"></script>
