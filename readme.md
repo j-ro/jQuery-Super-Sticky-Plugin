@@ -23,16 +23,16 @@ The plugin should work on sidebars in a wide range of DOM setups -- let me know 
 
 ###Options:###
  		
-**wrapper** -- a jQuery selector identifying the element that wraps around the sticky sidebar *(default: the sticky element's parent)*
+**wrapper** -- a jQuery selector identifying the element that wraps around the sticky sidebar. *(default: the sticky element's parent)*
  		
 **padding_top** -- the amount of padding you want the sticky sidebar to maintain from the top of the browser window, in pixels. If this is larger than the element's initial top offset, top padding will be set to the elements initial top offset instead. *(default: 0)*
  		
-**padding_bottom** -- the amount of padding you want the sticky sidebar to maintain from the bottom of the wrapper element, in pixels *(default: 0)*
+**padding_bottom** -- the amount of padding you want the sticky sidebar to maintain from the bottom of the wrapper element, in pixels. *(default: 0)*
 
 
 ###Methods:###
 
-**init** -- called on load and when either the element or its wrapper change height
+**init** -- called on load and when either the element or its wrapper change height.
 
 
 ###Examples:###
@@ -50,7 +50,7 @@ $(document).ready(function() {
 	$('.sticky_element').superSticky({
 		padding_top : 120,
 		padding_bottom : 50,
-		wrapper: '.action_page'
+		wrapper: '.wrapper'
 	});
 });
 ```
