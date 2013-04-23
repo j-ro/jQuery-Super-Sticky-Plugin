@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>jQuery Super Sticky by j-ro</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>jQuery Super Sticky</h1>
+        <p>A smooth sticky plugin that keeps an element stuck onscreen no matter how far the user scrolls. Handles edge cases well (like elements that are longer than browser windows, or elements or wrappers that change height after load).</p>
+
+        <p class="view"><a href="https://github.com/j-ro/jQuery-Super-Sticky-Plugin">View the Project on GitHub <small>j-ro/jQuery-Super-Sticky-Plugin</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/j-ro/jQuery-Super-Sticky-Plugin/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/j-ro/jQuery-Super-Sticky-Plugin/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/j-ro/jQuery-Super-Sticky-Plugin">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>jQuery Super Sticky Plugin</h1>
+
+<p><em>version 1.0, April 23, 2013</em></p>
+
+<p><em>by Jason Rosenbaum, Corporate Action Network, <a href="https://github.com/j-ro/">https://github.com/j-ro/</a></em></p>
+
+<p>A smooth sticky plugin that keeps an element stuck onscreen no matter how far the user scrolls. Handles edge cases well (like elements that are longer than browser windows, or elements or wrappers that change height after load).</p>
+
+<h2>Usage</h2>
+
+<h3>Setup:</h3>
+
+<p>Include the jquery.superSticky.js (or jquery.superSticky.min.js) file in your HTML file after your jQuery include:</p>
+
+<div class="highlight"><pre><span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"jquery.superSticky.js"</span> <span class="na">type=</span><span class="s">"text/javascript"</span><span class="nt">&gt;&lt;/script&gt;</span>
+</pre></div>
+
+<p>Then call the plugin on a DOM element you want to make sticky using something like the examples below.</p>
+
+<p>The plugin should work on sidebars in a wide range of DOM setups -- let me know if you have issues with your implementation in the issues section!</p>
+
+<h3>Options:</h3>
+
+<p><strong>wrapper</strong> -- a jQuery selector identifying the element that wraps around the sticky sidebar. <em>(default: the sticky element's parent)</em></p>
+
+<p><strong>padding_top</strong> -- the amount of padding you want the sticky sidebar to maintain from the top of the browser window, in pixels. If this is larger than the element's initial top offset, top padding will be set to the elements initial top offset instead. <em>(default: 0)</em></p>
+
+<p><strong>padding_bottom</strong> -- the amount of padding you want the sticky sidebar to maintain from the bottom of the wrapper element, in pixels. <em>(default: 0)</em></p>
+
+<h3>Methods:</h3>
+
+<p><strong>init</strong> -- called on load and when either the element or its wrapper change height.</p>
+
+<h3>Examples:</h3>
+
+<div class="highlight"><pre><span class="nx">$</span><span class="p">(</span><span class="nb">document</span><span class="p">).</span><span class="nx">ready</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="c1">//use defaults</span>
+    <span class="nx">$</span><span class="p">(</span><span class="s1">'.sticky_element'</span><span class="p">).</span><span class="nx">superSticky</span><span class="p">();</span>
+<span class="p">});</span>
+</pre></div>
+
+<div class="highlight"><pre><span class="nx">$</span><span class="p">(</span><span class="nb">document</span><span class="p">).</span><span class="nx">ready</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="c1">//use custom options</span>
+    <span class="nx">$</span><span class="p">(</span><span class="s1">'.sticky_element'</span><span class="p">).</span><span class="nx">superSticky</span><span class="p">({</span>
+        <span class="nx">padding_top</span> <span class="o">:</span> <span class="mi">120</span><span class="p">,</span>
+        <span class="nx">padding_bottom</span> <span class="o">:</span> <span class="mi">50</span><span class="p">,</span>
+        <span class="nx">wrapper</span><span class="o">:</span> <span class="s1">'.wrapper'</span>
+    <span class="p">});</span>
+<span class="p">});</span>
+</pre></div>
+
+<h2>License</h2>
+
+<p>Includes the jQuery Mutate plugin: <a href="https://github.com/jqui-dot-net/jQuery-mutate">https://github.com/jqui-dot-net/jQuery-mutate</a>    </p>
+
+<p>Other code copyright (c) 2013 Jason Rosenbaum</p>
+
+<p>Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:</p>
+
+<p>The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.</p>
+
+<p>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.</p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/j-ro">j-ro</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
