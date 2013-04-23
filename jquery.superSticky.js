@@ -119,7 +119,7 @@
 	                
 	                $wrapper.mutate('height',function (){
 	                	helpers.scroll(element, initialValues);
-	                	console.log('wrapper height change');
+	                	//console.log('wrapper height change');
 	                });
 
                 });
