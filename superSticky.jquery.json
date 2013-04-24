@@ -48,6 +48,6 @@
     "docs": "https://github.com/j-ro/jQuery-Super-Sticky-Plugin",
     "demo": "http://j-ro.github.io/jQuery-Super-Sticky-Plugin/demo.html",
     "dependencies": {
-        "jquery" : ">=1.5"
+        "jquery" : ">=1.7.0"
     }
 }
