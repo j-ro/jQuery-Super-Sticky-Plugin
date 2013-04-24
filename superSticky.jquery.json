@@ -1,0 +1,44 @@
+{
+    "name": "superSticky",
+    "title": "jQuery Super Sticky Plugin",
+    "description": "A smooth sticky plugin that keeps an element stuck onscreen no matter how far the user scrolls. Handles edge cases well (like elements that are longer than browser windows, or elements or wrappers that change height after load).",
+    "keywords": [
+        "sticky",
+        "sidebar",
+        "scroll",
+        "scrolling",
+        "element",
+        "fixed",
+        "position",
+        "browser",
+        "window",
+        "stuck",
+        "position",
+        "down",
+        "page"
+    ],
+    "version": "1.0.0",
+    "author": {
+        "name": "Jason Rosenbaum",
+        "url": "https://github.com/j-ro/"
+    },
+    "maintainers": [
+        {
+            "name": "Jason Rosenbaum",
+            "url": "https://github.com/j-ro/"
+        }
+    ],
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "https://github.com/j-ro/jQuery-Super-Sticky-Plugin"
+        }
+    ],
+    "bugs": "https://github.com/j-ro/jQuery-Super-Sticky-Plugin/issues",
+    "homepage": "https://github.com/j-ro/jQuery-Super-Sticky-Plugin",
+    "docs": "https://github.com/j-ro/jQuery-Super-Sticky-Plugin",
+    "demo": "http://j-ro.github.io/jQuery-Super-Sticky-Plugin/demo.html",
+    "dependencies": {
+        "jquery" : "*"
+    }
+}
