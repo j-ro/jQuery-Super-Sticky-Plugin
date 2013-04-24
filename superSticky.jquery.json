@@ -15,7 +15,16 @@
         "stuck",
         "position",
         "down",
-        "page"
+        "page",
+        "screen",
+        "float",
+        "floats",
+        "pin",
+        "pinned",
+        "stick",
+        "ui",
+        "fix",
+        "navigation"
     ],
     "version": "1.0.0",
     "author": {
@@ -39,6 +48,6 @@
     "docs": "https://github.com/j-ro/jQuery-Super-Sticky-Plugin",
     "demo": "http://j-ro.github.io/jQuery-Super-Sticky-Plugin/demo.html",
     "dependencies": {
-        "jquery" : "*"
+        "jquery" : ">=1.5"
     }
 }
