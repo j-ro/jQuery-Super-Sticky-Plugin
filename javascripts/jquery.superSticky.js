@@ -5,6 +5,8 @@
 // A smooth sticky plugin that keeps an element stuck onscreen no matter how far the user scrolls. 
 // Handles edge cases well (like elements that are longer than browser windows, or that change height after load).
 
+// Usage, notes, dependencies, and examples: https://github.com/j-ro/jQuery-Super-Sticky-Plugin
+
 // Copyright (c) 2013 Corporate Action Network
 // 
 // Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -24,26 +26,6 @@
 // LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
-
-// Usage
-//
-//		options:
-//			wrapper	-- a jQuery selector identifying the element that wraps around the sticky sidebar (default: the sticky element's parent)
-//			padding_top -- the amount of padding you want the sticky sidebar to maintain from the top of the browser window, in pixels (default: 0)
-//			padding_bottom -- the amount of padding you want the sticky sidebar to maintain from the bottom of the wrapper element, in pixels (default: 0)
-//
-//		methods:
-//			none
-//
-//		example:
-//			$(document).ready(function() {
-//				$('.sticky_element').superSticky({
-//					padding_top : 120,
-//					padding_bottom : 50,
-//					wrapper: '.action_page'
-//				});
-//			});
-
 
 (function($) {
 
