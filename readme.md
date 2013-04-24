@@ -63,7 +63,7 @@ See a demonstration of the plugin in action here: http://j-ro.github.io/jQuery-S
 
 Includes the jQuery Mutate plugin: https://github.com/jqui-dot-net/jQuery-mutate	
  		
-Other code copyright (c) 2013 Jason Rosenbaum
+Other code copyright (c) 2013 Corporate Action Network
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

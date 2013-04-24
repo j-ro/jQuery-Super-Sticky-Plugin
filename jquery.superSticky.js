@@ -5,7 +5,7 @@
 // A smooth sticky plugin that keeps an element stuck onscreen no matter how far the user scrolls. 
 // Handles edge cases well (like elements that are longer than browser windows, or that change height after load).
 
-// Copyright (c) 2013 Jason Rosenbaum
+// Copyright (c) 2013 Corporate Action Network
 // 
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
