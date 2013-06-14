@@ -1,13 +1,11 @@
 // jQuery Super Sticky Plugin
-// version 1.0.0, April 22, 2013
+// version 1.1, June 14, 2013
 // by Jason Rosenbaum, Corporate Action Network, seminal@theseminal.com
 
 // A smooth sticky plugin that keeps an element stuck onscreen no matter how far the user scrolls. 
 // Handles edge cases well (like elements that are longer than browser windows, or that change height after load).
 
-// Usage, examples, demos, dependencies, and notes at https://github.com/j-ro/jQuery-Super-Sticky-Plugin
-
-// Copyright (c) 2013 Corporate Action Network
+// Copyright (c) 2013 Jason Rosenbaum
 // 
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -26,6 +24,26 @@
 // LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
+
+// Usage
+//
+//		options:
+//			wrapper	-- a jQuery selector identifying the element that wraps around the sticky sidebar (default: the sticky element's parent)
+//			padding_top -- the amount of padding you want the sticky sidebar to maintain from the top of the browser window, in pixels (default: 0)
+//			padding_bottom -- the amount of padding you want the sticky sidebar to maintain from the bottom of the wrapper element, in pixels (default: 0)
+//
+//		methods:
+//			none
+//
+//		example:
+//			$(document).ready(function() {
+//				$('.sticky_element').superSticky({
+//					padding_top : 120,
+//					padding_bottom : 50,
+//					wrapper: '.action_page'
+//				});
+//			});
+
 
 (function($) {
 
@@ -82,6 +100,10 @@
 	                    'targetInitialLeftOffset'		: $element.offset().left
 	                };
 	                
+	                console.log(initialValues.targetInitialPosition);
+	                
+	                initialValues.targetInitialPosition = 'static';
+	                
 	                if ($element.superSticky.settings.padding_top > initialValues.targetInitialTopOffset) {
 	                	$element.superSticky.settings.padding_top = initialValues.targetInitialTopOffset;
 	                }
@@ -101,7 +123,7 @@
 	                
 	                $wrapper.mutate('height',function (){
 	                	helpers.scroll(element, initialValues);
-	                	//console.log('wrapper height change');
+	                	console.log('wrapper height change');
 	                });
 
                 });
@@ -180,6 +202,11 @@
 		                $element.css('left', 'auto');
 	                }
 	                
+                },
+                initialReset = function() {
+	                $element.css('position',values.targetInitialPosition);
+	                $element.css('top', values.targetInitialTop);
+	                $element.css('left', 'auto');
                 }
                 
                 //here's the heart: logic statements to call the right function based on the right scroll situation
@@ -238,6 +265,8 @@
 	                		}
 	                	}
 	                }
+	            } else {
+		            initialReset();
 	            }
 	        }
         }
