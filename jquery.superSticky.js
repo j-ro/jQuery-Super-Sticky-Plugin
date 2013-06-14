@@ -1,5 +1,5 @@
 // jQuery Super Sticky Plugin
-// version 1.1, June 14, 2013
+// version 1.0.1, June 14, 2013
 // by Jason Rosenbaum, Corporate Action Network, seminal@theseminal.com
 
 // A smooth sticky plugin that keeps an element stuck onscreen no matter how far the user scrolls. 

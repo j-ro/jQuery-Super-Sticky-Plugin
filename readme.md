@@ -1,5 +1,5 @@
 #jQuery Super Sticky Plugin#
-*version 1.0.0, April 23, 2013*
+*version 1.0.1, April 23, 2013*
 
 *by Jason Rosenbaum, Corporate Action Network, https://github.com/j-ro/*
 
